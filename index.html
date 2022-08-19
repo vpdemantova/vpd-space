@@ -8,6 +8,8 @@
 
   <link rel="stylesheet" href="style.css">
 
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
+
   <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
 </head>
@@ -37,11 +39,21 @@
     </div>
   </div>
 
-  <div class="gallery">
+  <div class="gallery" data-scroll-container>
+    <div class="project"></div>
+    <div class="project"></div>
     <div class="project"></div>
     <div class="project"></div>
     <div class="project"></div>
     <div class="project"></div>
   </div>
+
+  <script>
+    // const scroll = new LocomotiveScroll({
+    //   el: document.querySelector("[data-scroll-container]"),
+    //   smooth: true,
+    //   multiplier: 1
+    // })
+  </script>
 </body>
 </html>
