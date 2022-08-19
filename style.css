@@ -40,16 +40,16 @@ body {
 }
 
 body::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
+  width: 8px;
+  height: 8px;
 }
 
-  body::-webkit-scrollbar-track {
-    background-color: #000;
+body::-webkit-scrollbar-track {
+  background-color: #000;
 }
 
-  body::-webkit-scrollbar-thumb {
-    background-color: #FFF;
+body::-webkit-scrollbar-thumb {
+  background-color: #FFF;
 }
 
 a {
@@ -70,6 +70,12 @@ ol, ul {
   left: 3.2rem;
 }
 
+@media only screen and (max-width: 600px) {
+  .title {
+    z-index: -1;
+  }
+}
+
 .socials, .toptop {
   position: fixed;
   bottom: 0;
@@ -83,6 +89,14 @@ ol, ul {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .socials, .toptop {
+    font-size: 1.2rem;
+    width: 6rem;
+    height: 6rem;
+  }
 }
 
 .toptop { right: 0; }
@@ -101,6 +115,17 @@ ol, ul {
   position: absolute;
   top: 0;
   left: 74rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .rect {
+    width: 0.6rem;
+    height: 8rem;
+  
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .arrow {
@@ -124,6 +149,21 @@ ol, ul {
   transform: translateX(-50%);
 }
 
+@media only screen and (max-width: 600px) {
+  .arrow {
+    width: 0.6rem;
+    height: 4rem;
+  
+    top: 46rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .arrow::before {
+    bottom: 4rem;
+  }
+}
+
 .text {
   z-index: -1;
   font-size: 2.6rem;
@@ -136,6 +176,18 @@ ol, ul {
   left: 24rem;
 }
 
+@media only screen and (max-width: 600px) {
+  .text {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    width: 35rem;
+  
+    top: 29rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 .posts {
   z-index: -1;
   position: fixed;
@@ -146,6 +198,16 @@ ol, ul {
   gap: 1.6rem;
   width: 58rem;
   height: 22rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .posts {
+    z-index: -1;
+    position: fixed;
+    top: 8rem;
+    right: 50%;
+    transform: translateX(50%) scale(0.6);
+  }
 }
 
 .posts__wrapper {
@@ -207,8 +269,24 @@ ol, ul {
   padding: 8rem 0;
 }
 
+@media only screen and (max-width: 600px) {
+  .gallery {
+    margin: 50rem auto 0;
+    width: 87%;
+    flex-wrap: no-wrap;
+    padding: 0.6rem 0;
+  }
+}
+
 .project {
   width: 78.4rem;
   height: 40rem;
   background: darkolivegreen;
+}
+
+@media only screen and (max-width: 600px) {
+  .project {
+    width: 96%;
+    height: 30rem;
+  }
 }
