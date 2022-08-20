@@ -61,3 +61,12 @@ a {
 ol, ul {
   list-style: none;
 }
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  outline: none;
+  padding: 0;
+}

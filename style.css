@@ -1,3 +1,6 @@
+/*_____________*/
+/*____TITLE____*/
+/*_____________*/
 .title {
   z-index: -1;
   font-size: 2.6rem;
@@ -13,6 +16,9 @@
   }
 }
 
+/*_______________________*/
+/*____SOCIALS, TOPTOP____*/
+/*_______________________*/
 .socials, .toptop {
   z-index: 1;
   position: fixed;
@@ -40,6 +46,9 @@
 .toptop { right: 0; }
 .socials { left: 0; transition: 250ms cubic-bezier(0.215, 0.61, 0.355, 1); }
 
+/*___________________*/
+/*____RECT, ARROW____*/
+/*___________________*/
 .rect {
   width: 0.6rem;
   height: 14rem;
@@ -48,17 +57,6 @@
   position: absolute;
   top: 0;
   left: 74.8rem;
-}
-
-@media only screen and (max-width: 600px) {
-  .rect {
-    width: 0.6rem;
-    height: 8rem;
-  
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
 }
 
 .arrow {
@@ -83,6 +81,15 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .rect {
+    width: 0.6rem;
+    height: 8rem;
+  
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   .arrow {
     width: 0.6rem;
     height: 4rem;
@@ -97,6 +104,9 @@
   }
 }
 
+/*____________*/
+/*____TEXT____*/
+/*____________*/
 .text {
   z-index: -3;
   font-size: 2.6rem;
@@ -115,12 +125,15 @@
     line-height: 1.2;
     width: 35rem;
   
-    top: 29rem;
+    top: 12rem;
     left: 50%;
     transform: translateX(-50%);
   }
 }
 
+/*_____________*/
+/*____POSTS____*/
+/*_____________*/
 .posts {
   z-index: -3;
   position: fixed;
@@ -135,8 +148,7 @@
 
 @media only screen and (max-width: 600px) {
   .posts {
-    position: fixed;
-    top: 8rem;
+    top: 24rem;
     right: 50%;
     transform: translateX(50%) scale(0.6);
   }
@@ -181,7 +193,7 @@
 .post-card:nth-of-type(4):hover { transform: scale(1.4) rotate(2.5deg); } 
 .post-card:nth-of-type(5):hover { transform: scale(1.6) rotate(-3.5deg); } 
 
-.post-card svg { position: absolute; }
+.post-card svg { position: absolute; transform: scale(0.8); }
 
 .post-card:nth-of-type(1) svg { bottom: 3.4rem; right: 4.8rem; }
 .post-card:nth-of-type(2) svg { bottom: 50%; right: 4.2rem; transform: translateY(50%); }
@@ -189,6 +201,9 @@
 .post-card:nth-of-type(4) svg { bottom: 50%; right: 4.2rem; transform: translateY(50%); }
 .post-card:nth-of-type(5) svg { bottom: 1rem; right: 1rem; }
 
+/*_______________*/
+/*____GALLERY____*/
+/*_______________*/
 .gallery {
   z-index: -1;
   margin: 70rem auto 0;
@@ -199,7 +214,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
-  padding: 1rem 0;
+  padding: 1rem 0 50rem;
 }
 
 @media only screen and (max-width: 600px) {
@@ -207,23 +222,19 @@
     margin: 50rem auto 0;
     width: 36rem;
     flex-wrap: no-wrap;
-    padding: 0.6rem 0;
+    padding: 1rem 0 35rem;;
   }
 }
 
+/*________________*/
+/*____PROJECTS____*/
+/*________________*/
 .project {
 
 }
 
-@media only screen and (max-width: 600px) {
-  .project {
-
-  }
-}
-
-.project__media {
-  background: darkolivegreen;
-  position: relative;
+.project__media { 
+  background: darkolivegreen; position: relative;
 }
 
 .project__media img {
@@ -235,10 +246,20 @@
   object-fit: cover;
 }
 
+/* [] width: 58rem; height: 40rem; */
+/* [_] width: 99rem; height: 40rem; */
+/* [___] width: 158rem; height: 40rem; */
 .project:nth-of-type(1) .project__media { width: 58rem; height: 40rem; }
 .project:nth-of-type(2) .project__media { width: 99rem; height: 40rem; }
 
 @media only screen and (max-width: 600px) {
+  .project {
+
+  }
+
+  /* [] width: 34rem; height: 30rem; */
+  /* [_] width: 34rem; height: 40rem; */
+  /* [___] width: 34rem; height: 50rem; */
   .project:nth-of-type(1) .project__media { width: 34rem; height: 30rem; }
   .project:nth-of-type(2) .project__media { width: 34rem; height: 20rem; }
 }

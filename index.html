@@ -10,22 +10,22 @@
   <link rel="stylesheet" href="style.css">
 
   <link rel="shortcut icon" href="favicon.png" type="image/png">
-
-  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
 </head>
-<body class="top">
+<body>
+  <!--____ELEMENTS____-->
   <span class="title">VPD</span>
 
   <a href="https://linktr.ee/VitorPetri" target="_blank" class="socials">CONT <br> ACT</a>
 
-  <a href="#top" class="toptop">TOP <br> TOP</a>
+  <button onclick="toTheTop()" id="toptop" class="toptop">DOWN <br> DOWN</button>
 
   <div class="rect"></div>
   <div class="arrow"></div>
-
+  
+  <!--____TEXT____-->
   <p class="text">Hello! This is a place where u can find my socials links in the contact box,  some projects scrolling down, and some posts floating  on the screen. &nbsp;  thank &nbsp; you :)</p>
   
+  <!--____POSTS____-->
   <div class="posts">
     <div class="posts__wrapper">
       <a href="#" target="_blank" class="post-card">EVERITING <br> EVERYWHERE ALL <br> AT ONCE</a>
@@ -40,6 +40,7 @@
     </div>
   </div>
 
+  <!--____PROJECTS____-->
   <div class="gallery" data-scroll-container>
     <div class="project"><figure class="project__media"><img src="https://vitorpetri.com/digital-art/art4.png" alt=""></figure></div>
     <div class="project"><figure class="project__media"><img src="https://vitorpetri.com/digital-art/art3.png" alt=""></figure></div>
@@ -53,12 +54,28 @@
 
   </div>
 
+  <!--____SCRIPT____-->
   <script>
-    // const scroll = new LocomotiveScroll({
-    //   el: document.querySelector("[data-scroll-container]"),
-    //   smooth: true,
-    //   multiplier: 1
-    // })
+    button = document.getElementById('toptop')
+
+    window.onscroll = () => { scrollFunction() }
+
+    let drct = 0
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        button.innerHTML = "TOP <br> TOP"
+        drct = 0
+      } else {
+        button.innerHTML = "DOWN <br> DOWN"
+        drct = 390
+      }
+    }
+
+    function toTheTop() {
+      document.body.scrollTop = drct
+      document.documentElement.scrollTop = drct
+    }
   </script>
 </body>
 </html>
