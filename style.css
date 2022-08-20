@@ -284,12 +284,12 @@
   margin-bottom: 1.6rem;
 }
 
-.blanket:last-of-type .blanket__media {
+.blanket {
   background: #000;
   width: 160rem;
   height: 16rem;
   padding: 0;
-  margin: -3rem;
+  transform: translateY(10rem);
 }
 
 @media only screen and (max-width: 600px) {
@@ -298,9 +298,10 @@
 
   .square { width: 34rem; height: 30rem; }
   
-  .blanket:last-of-type .blanket__media {
+  .blanket {
     width: 36rem;
     height: 20rem;
+    transform: translateY(20rem);
   }
 }
 
