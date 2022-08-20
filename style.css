@@ -234,7 +234,7 @@
     margin: 50rem auto 0;
     width: 36rem;
     flex-wrap: no-wrap;
-    padding: 1rem 0 0;
+    padding: 1rem 0 5rem;
   }
 }
 
@@ -289,7 +289,7 @@
   width: 160rem;
   height: 16rem;
   padding: 0;
-  margin: -1rem;
+  margin: -3rem;
 }
 
 @media only screen and (max-width: 600px) {
