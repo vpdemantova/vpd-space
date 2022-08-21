@@ -34,9 +34,8 @@ body {
   text-transform: uppercase;
   color: #FFF;
   background: #000;
-
-  height: 100%;
   line-height: 1;
+  padding-bottom: 20rem;
 }
 
 body::-webkit-scrollbar {
