@@ -129,9 +129,9 @@
   transition: 850ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.text:hover {
+/* .text:hover {
   transform: scale(1.6) translateX(1rem) rotate(-1442deg);
-}
+} */
 
 @media only screen and (max-width: 600px) {
   .text {
