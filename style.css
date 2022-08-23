@@ -140,9 +140,9 @@
     line-height: 1.2;
     width: 31rem;
   
-    top: 12rem;
+    top: 13.4rem;
     left: 50%;
-    transform: translateX(-50%) scale(1);
+    transform: translateX(-50%) scale(1.15);
   }
 }
 
@@ -233,7 +233,7 @@
 @media only screen and (max-width: 600px) {
   .gallery {
     /* margin: 50rem auto 0; */
-    bottom: -283rem;
+    bottom: -284rem;
     width: 36rem;
     padding: 1rem 0 0;
   }
@@ -242,7 +242,7 @@
     width: 0.6rem;
     height: 6rem;
   
-    bottom: 46rem;
+    bottom: 45rem;
     left: 50%;
     transform: translateX(-50%);
   }
