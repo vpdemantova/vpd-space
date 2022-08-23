@@ -99,19 +99,6 @@
     transform: translateX(-50%);
   }
 
-  .arrow {
-    width: 0.6rem;
-    height: 6rem;
-  
-    bottom: 49rem;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .arrow::before {
-    bottom: 6rem;
-  }
-
   .project:last-child {
     padding-bottom: 6rem;
   }
@@ -246,9 +233,22 @@
 @media only screen and (max-width: 600px) {
   .gallery {
     /* margin: 50rem auto 0; */
-    bottom: -280rem;
+    bottom: -283rem;
     width: 36rem;
     padding: 1rem 0 0;
+  }
+  
+  .arrow {
+    width: 0.6rem;
+    height: 6rem;
+  
+    bottom: 46rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .arrow::before {
+    bottom: 6rem;
   }
 }
 
