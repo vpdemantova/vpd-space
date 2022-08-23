@@ -103,7 +103,7 @@
     width: 0.6rem;
     height: 6rem;
   
-    bottom: 29rem;
+    bottom: 49rem;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -246,7 +246,7 @@
 @media only screen and (max-width: 600px) {
   .gallery {
     /* margin: 50rem auto 0; */
-    bottom: -300rem;
+    bottom: -280rem;
     width: 36rem;
     padding: 1rem 0 0;
   }
