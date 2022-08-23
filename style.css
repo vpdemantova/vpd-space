@@ -122,14 +122,14 @@
 /*____________*/
 .text {
   z-index: -3;
-  font-size: 2.2rem;
+  font-size: 2.6rem;
   line-height: 1.2;
   text-align: justify;
-  width: 86rem;
+  width: 36rem;
 
   position: fixed;
-  top: 3.5rem;
-  right: 22rem;
+  top: 28.6rem;
+  left: 58rem;
   transition: 900ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
